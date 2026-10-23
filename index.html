@@ -76,6 +76,9 @@ button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 #list button.item{display:flex;gap:14px;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--line);
   padding:10px 0;font:500 15.5px var(--body);color:var(--ink);cursor:pointer}
 #list button.item span{font-family:var(--display);font-weight:700;font-size:1.15em;color:var(--gold);min-width:2ch;font-variant-numeric:tabular-nums}
+.go-site{display:flex;justify-content:center;align-items:center;margin-top:14px;min-height:52px;border-radius:999px;background:var(--gold);color:var(--on-gold);font-weight:600;font-size:16px;text-decoration:none;letter-spacing:.01em}
+.go-site:hover{filter:brightness(1.05)}
+.go-site:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 .hint{display:none;font-size:11.5px;color:var(--muted);text-align:center;margin-top:6px;letter-spacing:.02em}
 .mid{display:flex;flex-direction:column;align-items:center}
 @media (pointer:coarse){.hint{display:block}}
@@ -164,7 +167,7 @@ function render(dir){
   body.forEach(p=>{ html+= Array.isArray(p)? `<ol>${p.map(x=>`<li>${esc(x)}</li>`).join("")}</ol>` : `<p>${esc(p)}</p>`});
   html+=`</div><p class="tag">${esc(tag)}</p>`;
   if(extra) html+=`<div class="extra"><b>${esc(extra[0])}</b>${esc(extra[1])}</div>`;
-  if(last) html+=`<p class="code">esansshop.com'da <strong>HOUSEOFHER</strong> koduyla %10 indirim seni bekliyor.</p>`;
+  if(last) html+=`<p class="code">esansshop.com'da <strong>HOUSEOFHER</strong> koduyla %10 indirim seni bekliyor.</p><a class="go-site" href="https://esansshop.com/?utm_source=house_of_her&utm_medium=workshop&utm_campaign=houseofher_workshop" target="_blank" rel="noopener">esansshop.com'a git →</a>`;
   const m=$("#card"); m.innerHTML=html; m.style.transform=""; m.style.opacity=""; m.classList.remove("in-next","in-prev"); if(dir){void m.offsetWidth; m.classList.add(dir>0?"in-next":"in-prev")}
   const k=chapterOf(n); document.querySelectorAll(".chap").forEach((e,j)=>{e.classList.toggle("on",j===k); if(j===k){try{e.scrollIntoView({inline:"center",block:"nearest"})}catch(_){}}});
   $("#bar").style.width=(n/N*100)+"%";
