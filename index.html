@@ -1,15 +1,6 @@
-<!doctype html>
-<html lang="tr">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Esansshop × House of Her · Workshop Kartları</title>
-<meta name="description" content="Esansshop × House of Her parfüm workshop'u bilgi kartları.">
-<meta property="og:title" content="Esansshop × House of Her · Workshop Kartları">
-<meta property="og:description" content="Parfümün tarihinden kendi parfümünü hazırlamaya 20 kart.">
-<meta name="theme-color" content="#17120e">
-<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)} *{box-sizing:border-box} body{margin:0} [hidden]{display:none!important} img{max-width:100%}</style>
-
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Esansshop Workshop Kartları</title>
+<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:ital,wght@0,400;0,500;0,600;1,400&display=swap">
@@ -51,7 +42,7 @@ main{flex:1;display:flex;flex-direction:column;justify-content:center;padding-bl
 .num small{font-family:var(--body);font-size:.16em;color:var(--muted);font-weight:500;letter-spacing:.04em;margin-left:8px;vertical-align:.4em}
 h1{font-family:var(--display);font-weight:700;font-size:clamp(30px,7.4vw,42px);line-height:1.1;margin:18px 0 16px;text-wrap:balance}
 .body p{margin:0 0 12px;max-width:60ch}
-.body ol{margin:0 0 12px;padding-left:1.3em}
+.body ol,.body ul{margin:0 0 12px;padding-left:1.3em}
 .body li{margin-bottom:6px}
 .body li::marker{color:var(--amber);font-weight:600}
 .tag{font-family:var(--display);font-style:italic;font-weight:500;font-size:1.25em;line-height:1.35;color:var(--amber);margin:8px 0 0;padding-left:14px;border-left:2px solid var(--gold)}
@@ -108,8 +99,6 @@ button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
   .bar{width:min(120px,28vw)}
 }
 </style>
-</head>
-<body>
 
 <div class="wrap">
   <header>
@@ -133,7 +122,7 @@ button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 </div>
 
 <script>
-const CH=[["Tarih",1,4],["Hammaddeler",5,8],["Esans",9,13],["Kullanım",14,17],["Hazırlama",18,19],["Anı",20,20]];
+const CH=[["Tarih",1,4],["Hammaddeler",5,8],["Esans",9,12],["Notalar",13,17],["Kullanım",18,23],["Hazırlama",24,25],["Anı",26,26]];
 const C=[
 ["Adını bildiğimiz ilk parfümcü bir kadındı",["Yaklaşık 3.200 yıl önce Asur sarayında Tapputi adında bir kadın çiçekleri, yağları ve kokulu otları suyla karıştırıp süzerek parfüm yapıyordu. Adı bir kil tablete yazılmış. Tarihte adı bilinen ilk parfümcü o."],"Bugün bu masada oturan herkes onun mesleğini yapıyor."],
 ["Kokuyu buharla yakalamak",["Bir çiçeğin kokusunu buharla ayırıp şişeye almak, yani damıtma, Orta Çağ'da İslam dünyasında gelişti. Kaynaklarda bu yöntem İbn Sina'nın adıyla birlikte anılır. Gül suyu da bu yolla üretildi."],"Bugünkü parfümün temeli bir damıtma kabında atıldı."],
@@ -146,14 +135,20 @@ const C=[
 ["Bir parfüm üç şeyden oluşur",["Koku yağı yani esans, alkol ve çok az su. Şişedeki sıvının çoğu alkoldür, kokuyu taşıyan kısım ise esanstır. Alkol kokuyu tenine taşır ve buharlaşır, geride esans kalır."],"Parfümün kalbi, şişenin en küçük kısmında."],
 ["EDP bir yasa değil, bir oran",["Parfüm, EDP ve EDT etiketlerinin yasal bir tanımı yok. Hepsi esansın alkole oranını anlatıyor ve her marka bu oranı farklı belirliyor. Genelde EDT'de yüzde 8-15, EDP'de yüzde 12-20, parfümde yüzde 20-40 civarı esans oluyor. Aralıklar birbirine bile giriyor."],"Etiketi marka yazar. Bugün oranı sen belirliyorsun.",["Senin şişen için önerilen oran","%30 · 50 ML şişe için 15 ML esans + 35 ML solüsyon"]],
 ["Muadil esans ne demek?",["Muadil esans, sevilen bir parfümün koku profilinden ilham alınarak üretilen koku yağıdır. Aynı koku ailesinde, aynı notalarla hazırlanır. Tende herkeste biraz farklı açılır, bu orijinal parfüm için de geçerli."],"En doğru karşılaştırma, 14 gün sonra kendi teninde yapacağın karşılaştırma."],
-["Parfümün üç katı var",["Üst notalar ilk 15 dakika duyulur ve uçar. Orta notalar birkaç saat kalır, kokunun kalbi onlardır. Alt notalar gün boyu teninde kalır. Örneğin Delina önce liçi ve raventle açılır, gül ve vanilya sonra gelir.","Masandaki koku kağıdını şimdi kokla, bir saat sonra tekrar kokla. Aynı kokunun ne kadar değiştiğini göreceksin."],"Bir parfümü ilk saniyesiyle değil, akşamki haliyle tanırsın."],
 ["Paran kokuya gitsin",["Bir parfümün fiyatında şişenin, ambalajın, reklamın ve dağıtımın payı büyük. Esans aldığında ödediğin para kokunun kendisine gider. Üstelik oranı sen belirlersin: yüzde 30'la parfüm yoğunluğunda bir koku elde edersin.","30 ML esanstan 2 adet 50 ML parfüm çıkar."],"Bugün masanda iki kişiye bir kit olmasının sebebi bu."],
+["Parfümün üç katı var",["Üst notalar ilk 15 dakika duyulur ve uçar. Orta notalar birkaç saat kalır, kokunun kalbi onlardır. Alt notalar gün boyu teninde kalır. Örneğin Delina önce liçi ve raventle açılır, gül ve vanilya sonra gelir.","Masandaki koku kağıdını şimdi kokla, bir saat sonra tekrar kokla. Aynı kokunun ne kadar değiştiğini göreceksin."],"Bir parfümü ilk saniyesiyle değil, akşamki haliyle tanırsın."],
+["Hangi nota hangi katta?", ["Hafif ve uçucu moleküller üstte, ağır olanlar altta durur.", {"ul": ["Üst: bergamot, limon, greyfurt, nane", "Orta: gül, yasemin, iris, tarçın, karabiber", "Alt: sandal ağacı, sedir, vetiver, paçuli, vanilya, amber, misk, oud"]}], "Akşam teninde kalan koku, alt notalardır."],
+["Her parfümün bir imzası var", ["Bir parfümde onlarca hammadde olabilir ama burnun genelde iki üçünü seçer. Parfümün imzası bu baskın notadır. Santal 33'te sandal ağacı, Lost Cherry'de vişne öne çıkar.", "Bazı parfümler katman katman açılmaz, baştan sona aynı kokar. Bunlara lineer parfüm denir."], "Bir kokuyu sevdiğinde çoğu zaman bir notayı seviyorsun."],
+["Kokuların da aileleri var", ["Parfümler kabaca altı ailede toplanır: çiçeksi, ferah, odunsu, amber, gurme ve şipre. Ferah aile narenciye ve deniz kokularını, gurme aile vanilya, karamel ve fıstık gibi yenebilir notaları kapsar.", "Bugün masada çiçeksiye Delina, odunsuya Santal 33, ferah aileye Wood Sage & Sea Salt, gurmeye La Vie Est Belle ve Pistachio Gelato, ambere Baccarat Rouge 540, şipreye Coco Mademoiselle örnek."], "Sevdiğin parfümün ailesini bilirsen yenisini seçmek kolaylaşır."],
+["Hangi koku kime?", ["Kuru ten kokuyu daha kısa tutar. Duştan sonra kokusuz bir nemlendirici sür, ardından parfümü sık. Kuru tende amber, vanilya ve odunsu alt notaları güçlü kokular daha uzun kalır.", "Ofiste ve kapalı ortamda iki üç fıs ve hafif kokular iyi gider. Akşam yoğun kokuların zamanı."], "Kokun bir kol mesafesinden duyulsun, odanın öbür ucundan değil."],
 ["Parfümü tende seç, kağıtta değil",["Koku kağıdı sana sadece üst notaları gösterir. Ten ise kendi sıcaklığıyla kokuyu değiştirir, aynı parfüm iki farklı kişide farklı kokar. Bir parfüme karar vermeden önce bileğine sık ve birkaç saat bekle."],"Kağıt tanıştırır, ten karar verir."],
 ["Burnun yorulunca kahve kokladın mı?",["Mağazalarda burnun sıfırlansın diye kahve çekirdeği koklatırlar. Bir araştırma bunun temiz havadan daha iyi çalışmadığını gösterdi. Kokular birbirine karışmaya başladıysa bir dakika masadan kalk, açık havaya çık, nefes al."],"Burnun da mola verir. Ona izin ver."],
 ["Mevsimin de bir kokusu var",["Sıcakta koku daha hızlı yayılır ve daha hızlı uçar. Bu yüzden yazın ferah ve hafif kokular, kışın tatlı ve yoğun kokular daha iyi durur. Bugün masadakiler arasında yaz için Wood Sage & Sea Salt ve Bamboo Harmony, kış için Lost Cherry ve Pistachio Gelato'yu deneyebilirsin."],"Gardırobun gibi, kokunun da mevsimi var."],
 ["Sıktıktan sonra bileklerini sürtme",["Parfümü nabız noktalarına sık: bilek içi, boyun yanları, kulak arkası. Bu bölgeler sıcak olduğu için koku daha iyi yayılır. Sıktıktan sonra bileklerini birbirine sürtme. Sürtünme kokuyu ısıtır ve üst notaları hızla uçurur."],"Sık, bırak, kendi kurusun."],
+["Nereye sıkarsan ne kadar kalır?", ["Ten ısısıyla kokuyu yayar ama yaydıkça da tüketir. Kıyafet ve atkı kokuyu daha uzun tutar, özellikle ferah notalar kumaşta tende olduğundan uzun yaşar. İpek ve açık renk kumaşta önce görünmeyen bir yerde dene.", "Saçına doğrudan sıkma, alkol saçı kurutur. Fırçana bir kez sık ve tara. Bergamot gibi bazı narenciye yağları güneşte tende leke yapabilir, güneşe çıkacaksan kıyafetine sık."], "Ferah koku kıyafete, sıcak koku tene."],
+["Herkesin yanlış bildiği dört şey", [{"ul": ["\"Artık kokumu duymuyorum, uçtu.\" Uçmadı. Burnun alıştı, etrafındakiler hâlâ duyuyor. Çoğumuz bu yüzden fazla sıkarız.", "\"Havaya sık, içinden geç.\" Parfümün çoğu yere ve havaya gider. Doğrudan tene sık.", "\"Sentetik kötüdür.\" Misk ve amber gibi birçok koku bugün etik ve güvenli olsun diye laboratuvarda üretiliyor.", "\"Parfüm bozulmaz.\" Bozulur. Işık, ısı ve hava onun düşmanı."]}], "Burnun her zaman doğruyu söylemez."],
 ["Kendi parfümünü dört adımda hazırla",[["Şırıngayla 15 ML esansı ölç ve şişeye dök.","Solüsyon iğnesini tak, 35 ML solüsyonu ölç ve şişeye ekle.","Şişenin borusunu boyuna göre kes, valfi aparatla kapat.","Şişeyi 2 dakika boyunca güçlüce çalkala."]],"Bugün oranı da, kokuyu da sen seçtin."],
-["Parfümün de beklemeye ihtiyacı var",["Parfümcüler karışımlarını şişelemeden önce haftalarca dinlendirir. Bu sürede esans ile alkol birbirine alışıyor ve koku yerine oturuyor. Şişeni ışık almayan, serin bir yerde beklet. Banyo rafı ve pencere önü olmaz.","Eve gidince hemen kokladığında koku biraz keskin gelebilir. Bu normal. Dinlendikçe yumuşar ve daha kalıcı hale gelir. Serin ve karanlıkta, kapağı kapalı saklanan bir parfüm yıllarca kullanılır."],"Sabır, karışımın son malzemesi.",["Senin şişen için bekleme süresi","En az 14 gün"]],
+["Parfümün de beklemeye ihtiyacı var",["Parfümcüler karışımlarını şişelemeden önce haftalarca dinlendirir. Bu sürede esans ile alkol birbirine alışıyor ve koku yerine oturuyor. Şişeni ışık almayan, serin bir yerde beklet. Banyo rafı ve pencere önü olmaz.","Eve gidince hemen kokladığında koku biraz keskin gelebilir. Bu normal. Dinlendikçe yumuşar ve daha kalıcı hale gelir. Açılmış bir parfüm genelde 3-5 yıl iyi kalır, narenciyeli kokular daha çabuk bozulur. Rengi koyulaştıysa ya da ekşi, metalik bir koku geliyorsa bozulmuştur. Arabada bırakma, kutusunda saklamak en iyisi."],"Sabır, karışımın son malzemesi.",["Senin şişen için bekleme süresi","En az 14 gün"]],
 ["Kokular seni çocukluğuna götürür",["Kokunun hatırlattığı anıların çoğu hayatımızın ilk on yılından geliyor. Bir araştırmaya göre kokuyla gelen anılar, kelimeyle ya da fotoğrafla gelenlerden daha çok \"o ana geri dönmüş gibi\" hissettiriyor."],"Bugün yaptığın şişe, bir gün birinin anısı olacak.",null,true]
 ];
 const N=C.length; let i=0;
@@ -164,7 +159,7 @@ $("#chapters").innerHTML=CH.map(c=>`<span class="chap">${c[0]}</span>`).join("")
 function render(dir){
   const [h,body,tag,extra,last]=C[i], n=i+1;
   let html=`<div class="num">${String(n).padStart(2,"0")}<small>/ ${N}</small></div><h1>${esc(h)}</h1><div class="body">`;
-  body.forEach(p=>{ html+= Array.isArray(p)? `<ol>${p.map(x=>`<li>${esc(x)}</li>`).join("")}</ol>` : `<p>${esc(p)}</p>`});
+  body.forEach(p=>{ html+= Array.isArray(p)? `<ol>${p.map(x=>`<li>${esc(x)}</li>`).join("")}</ol>` : (p&&p.ul)? `<ul>${p.ul.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>` : `<p>${esc(p)}</p>`});
   html+=`</div><p class="tag">${esc(tag)}</p>`;
   if(extra) html+=`<div class="extra"><b>${esc(extra[0])}</b>${esc(extra[1])}</div>`;
   if(last) html+=`<p class="code">esansshop.com'da <strong>HOUSEOFHER</strong> koduyla %10 indirim seni bekliyor.</p><a class="go-site" href="https://esansshop.com/?utm_source=house_of_her&utm_medium=workshop&utm_campaign=houseofher_workshop" target="_blank" rel="noopener">esansshop.com'a git →</a>`;
@@ -202,5 +197,4 @@ const mh=(location.hash||"").match(/^#kart-(\d+)$/); if(mh){const v=+mh[1]; if(v
 render();
 </script>
 
-</body>
-</html>
+</body></html>
