@@ -13,6 +13,7 @@ const SUTUNLAR = [
   ["istek", "Sonraki atölye isteği"],
   ["yorum", "Ek yorum"],
   ["ad", "Ad"],
+  ["instagram", "Instagram"],
   ["eposta", "E-posta"],
   ["izin", "E-posta izni"],
 ];

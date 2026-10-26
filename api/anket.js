@@ -39,6 +39,8 @@ module.exports = async function handler(req, res) {
     istek: metin(b.istek, 1000),
     yorum: metin(b.yorum, 1500),
     ad: metin(b.ad, 80),
+    // Instagram adı: baştaki @ ve link kısmı atılır, yalnızca harf, rakam, nokta ve alt çizgi kalır
+    instagram: metin(b.instagram, 120).replace(/^.*instagram\.com\//i, "").replace(/^@+/, "").replace(/[^A-Za-z0-9._]/g, "").slice(0, 30),
     eposta: metin(b.eposta, 120),
     izin: b.izin === "evet" && metin(b.eposta, 120) ? "evet" : "hayır",
   };
