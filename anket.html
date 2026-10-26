@@ -223,6 +223,10 @@ button:focus-visible,.btn:focus-visible,a:focus-visible{outline:2px solid var(--
           <input type="text" id="ad" name="ad" maxlength="80" autocomplete="name">
         </div>
         <div class="field">
+          <label for="instagram">Instagram kullanıcı adın <small>(isteğe bağlı)</small></label>
+          <input type="text" id="instagram" name="instagram" maxlength="31" placeholder="@kullaniciadi" autocomplete="off" autocapitalize="none" spellcheck="false">
+        </div>
+        <div class="field">
           <label for="eposta">E-posta <small>(yeni atölyelerden haberdar olmak istersen)</small></label>
           <input type="email" id="eposta" name="eposta" maxlength="120" autocomplete="email" inputmode="email">
           <label class="consent"><input type="checkbox" id="izin" name="izin" value="evet"><span>Esansshop'un yeni atölye ve kampanyalarından e-postayla haberdar olmak istiyorum. Verilerin <a href="https://esansshop.com/pages/kvkk" target="_blank" rel="noopener">KVKK Aydınlatma Metni</a> kapsamında işlenir.</span></label>
@@ -314,7 +318,7 @@ button:focus-visible,.btn:focus-visible,a:focus-visible{outline:2px solid var(--
     var data = {
       genel: checked("genel"), parfum: checked("parfum"), anlatim: checked("anlatim"), sure: checked("sure"), oneri: checked("oneri"),
       sevilen: Array.prototype.map.call(form.querySelectorAll('input[name="sevilen"]:checked'), function(x){ return x.value; }),
-      istek: val("istek"), yorum: val("yorum"), ad: val("ad"), eposta: eposta,
+      istek: val("istek"), yorum: val("yorum"), ad: val("ad"), instagram: val("instagram"), eposta: eposta,
       izin: $("#izin").checked && eposta ? "evet" : "hayır", website: val("website")
     };
     sending = true; render();
